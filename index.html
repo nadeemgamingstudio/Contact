@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact & Support — 12 Testers – Testers Community</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #0f1724;
+      --card: #0b1220;
+      --muted: #94a3b8;
+      --accent: #00bfa6;
+      --accent-2: #6c5ce7;
+      --glass: rgba(255,255,255,0.03);
+      --maxwidth: 980px;
+      --radius: 14px;
+    }
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;}
+    body{
+      background: linear-gradient(180deg, #071026 0%, #08102a 55%, #05111f 100%);
+      color: #E6EEF3;
+      padding:40px 16px;
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{
+      max-width: var(--maxwidth);
+      margin: 0 auto;
+      background: var(--glass);
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.04);
+      box-shadow: 0 12px 34px rgba(2,6,23,0.7);
+      overflow: hidden;
+    }
+    header{
+      padding:28px 36px;
+      display:flex;
+      align-items:center;
+      gap:18px;
+      background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-bottom: 1px solid rgba(255,255,255,0.03);
+    }
+    .logo{
+      width:84px;height:84px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      box-shadow:0 6px 18px rgba(12,14,30,0.6);
+      overflow:hidden;
+    }
+    .logo img{width:60px;height:60px;object-fit:contain;}
+    .hdr-text h1{margin:0;font-size:22px;font-weight:800}
+    .hdr-text p{margin:6px 0 0;font-size:13px;color:var(--muted)}
+    
+    main{
+      padding:32px 36px;
+      display:flex;
+      flex-direction:column;
+      gap:28px;
+    }
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.00));
+      padding:22px;
+      border:1px solid rgba(255,255,255,0.03);
+      border-radius:12px;
+    }
+    h2{margin:0 0 14px 0;font-size:18px;font-weight:700}
+    p,ul{font-size:14px;color:var(--muted);line-height:1.55}
+    
+    .contact-box{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      font-size:14px;
+    }
+    
+    .btn{
+      width:fit-content;
+      display:inline-block;
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      padding:12px 18px;
+      font-weight:700;
+      border-radius:10px;
+      text-decoration:none;
+      color:#022027;
+      box-shadow:0 6px 18px rgba(12,14,30,0.6);
+      margin-top:16px;
+    }
+    
+    footer{
+      padding:18px 36px;
+      color:var(--muted);
+      border-top:1px solid rgba(255,255,255,0.04);
+      font-size:13px;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:12px;
+    }
+    @media(max-width:800px){
+      main{padding:22px}
+      header{padding:22px}
+      footer{padding:22px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo"><img src="https://raw.githubusercontent.com/nadeemgamingstudio/Icons/refs/heads/main/12TestersTestersCommunity.png"></div>
+      <div class="hdr-text">
+        <h1>Contact & Support</h1>
+        <p>For account issues, tester queries, app submissions & privacy concerns.</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Need Help?</h2>
+        <p>If you are facing any issue while using <strong>12 Testers – Testers Community</strong>, feel free to reach us.</p>
+        
+        <div class="contact-box">
+          <div><strong>Developer:</strong> Nadeem Gaming Studio</div>
+          <div><strong>Email:</strong> <a href="mailto:nadeemgamer180@gmail.com" style="color:#BFECE4">nadeemgamer180@gmail.com</a></div>
+          <div><strong>Response Time:</strong> 24–72 hours</div>
+        </div>
+
+        <a class="btn" href="mailto:nadeemgamer180@gmail.com">Send Message</a>
+      </section>
+
+      <section class="card">
+        <h2>What can you request?</h2>
+        <ul>
+          <li>Account deletion or personal data removal</li>
+          <li>Report issue or bug in the app</li>
+          <li>App submission help for developers</li>
+          <li>Token rewards related questions</li>
+        </ul>
+        <p>While sending message, please include your registered email for verification.</p>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Nadeem Gaming Studio — All Rights Reserved</div>
+      <div>App: 12 Testers – Testers Community</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
